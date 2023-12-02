@@ -14,7 +14,10 @@ void PrintArray(Array a)
 {
     a.print();
 }
+void f(Time a, int b)
+{
 
+}
 
 //void Print(String s)
 //{
@@ -26,12 +29,38 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
+    /////// 25.11.2023 ///////
+
+    // -, ++, --,
+    // -, +, *, /, += ... /=, %, %= ,
+    // ! 
+    // <, >, == , != , <=, >= 
+
+    // ?: , . , -> , sizeof, ::
+
+    Fraction f1;
+    f1.input();
+    Fraction f2;
+    f2.input();
+    Fraction f3;
+    //f3.add(f1, f2);
+    f3 = f1 + f2;  // f1.operator+(f2)
+    f3 = f1.operator+(f2);  // f1.operator+(f2)
+    f3.display();
+    f3 = -f2;
+    f3.display();
+    ++f3;
+    f3++;
+
+    f2 += f3; // f2 = f2 + f3;  // f2.oper+=(f3);
+
+    //f(1, 2);
 
     /////// 25.11.2023 ///////
 
-    cout << Area::Square(10) << endl;
+    /*cout << Area::Square(10) << endl;
     cout << Area::Rectangle(10, 20) << endl;
-    cout << Area::getCount() << endl;
+    cout << Area::getCount() << endl;*/
 
     //String s("mama");
     //Print("mama");
@@ -42,7 +71,7 @@ int main()
     /*Array a(10);
     a.setRandom();
     a.print();
-    PrintArray(a);*/
+    PrintArray(10);*/
 
     //#2
     /*Array a(10);
